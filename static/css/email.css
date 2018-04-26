@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    margin: 0 auto;
+}
+.bodywrapper{
+    background-color: red;
+    width: 200px;
+    height: 25px;
+}
+.error {
+    color: white;
+}
+h1 {
+    width: 200px;
+    height: 25px;
+    background-color: green;
+    color: white;
+}

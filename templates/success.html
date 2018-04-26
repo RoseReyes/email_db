@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/email.css') }}">
+    <title>Success</title>
+</head>
+<body>
+        <h1>The email you entered is a valid email address!</h1>
+        {% for email in emails: %}
+          <p>{{ email['email'] }} {{ email['created_at'].strftime('%m/%d/%y %I:%M %p') }}</p>
+        {% endfor %}
+</body>
+</html>
